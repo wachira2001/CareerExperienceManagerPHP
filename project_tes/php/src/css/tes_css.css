@@ -1,0 +1,30 @@
+.grid{
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 100px minmax(250px,auto) 200px;
+    grid-template-areas: 
+    'header header'
+    'menu content'
+    'footer footer';
+}
+
+.page-header{
+    grid-area: header;
+}
+.page-menu{
+    grid-area: menu;
+}
+.page-content{
+    grid-area: content;
+}
+.page-footer{
+    grid-area: footer;
+}
+
+.content {
+    background-color: aquamarine;   /*สีพื้นหลัง*/
+    border: 2px solid black; /*กำหนดความหนาเส้นขอบและใส่สีเส้นขอบ*/
+    box-sizing: border-box;
+    padding: 10px;
+
+}
